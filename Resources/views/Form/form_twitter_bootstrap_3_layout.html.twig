@@ -52,3 +52,10 @@
     {{ parent() }}
 {% endspaceless %}
 {% endblock choice_widget_collapsed %}
+
+{% block button_widget %}
+    {% set type = type|default('button') %}
+    {% set btn_class = btn_class|default(type == 'submit' ? 'btn-primary' : type == 'reset' ? 'btn-danger' : 'btn-default') %}
+    {% set attr = attr|merge({'class': attr.class|default('') ~ ' btn ' ~ btn_class }) %}
+    {{ parent() }}
+{% endblock button_widget %}
