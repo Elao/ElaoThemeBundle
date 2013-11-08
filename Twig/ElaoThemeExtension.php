@@ -2,9 +2,9 @@
 
 namespace Elao\Bundle\ThemeBundle\Twig;
 
-use Twig;
+use Twig_Extension;
 
-class ElaoThemeExtension extends Twig\Extension
+class ElaoThemeExtension extends Twig_Extension
 {
     /**
      * {@inheritdoc}

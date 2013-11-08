@@ -9,7 +9,7 @@
     </parameters>
 
     <services>
-        <service id="elao.twig.theme_extension" class="%elao.twig.theme_extension%">
+        <service id="elao.twig.theme_extension" class="%elao.twig.theme_extension.class%">
             <tag name="twig.extension" />
         </service>
     </services>
