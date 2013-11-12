@@ -4,7 +4,7 @@ namespace Elao\Bundle\ThemeBundle\Twig\Extension;
 
 use Twig_Extension;
 
-class ElaoThemeExtension extends Twig_Extension
+class ElaoThemeTwigExtension extends Twig_Extension
 {
     /**
      * {@inheritdoc}
