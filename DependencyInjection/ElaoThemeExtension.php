@@ -29,7 +29,7 @@ class ElaoThemeExtension extends Extension
             'twig.form.resources',
             array_merge(
                 $container->getParameter('twig.form.resources'),
-                array('%kernel.root_dir%/../vendor/elao/theme-twitter-bootstrap-3/Elao/Theme/TwitterBootstrap3/Resources/views/Form/form_default_layout.html.twig')
+                array('ElaoThemeBundle:Form:form_default_layout.html.twig')
             )
         );
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Elao\Bundle\ThemeBundle\Twig;
+namespace Elao\Bundle\ThemeBundle\Twig\Extension;
 
 use Twig_Extension;
 
