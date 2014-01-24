@@ -4,7 +4,7 @@
     "description": "Handle elao themes.",
     "keywords": ["elao", "theme"],
     "homepage": "https://github.com/Elao/ElaoThemeBundle",
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Elao",
