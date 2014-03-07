@@ -1,0 +1,19 @@
+{% if framework == 'twitter_bootstrap_3' %}
+    {% set layout = "ElaoThemeBundle:Demo:layoutTwitterBootstrap3.html.twig" %}
+    {% form_theme form "ElaoThemeTwitterBootstrap3Bundle:Form:form_horizontal_layout.html.twig" %}
+{% elseif framework == 'zurb_foundation_4' %}
+    {% set layout = "ElaoThemeBundle:Demo:layoutZurbFoundation4.html.twig" %}
+    {% form_theme form "ElaoThemeZurbFoundation4Bundle:Form:form_horizontal_layout.html.twig" %}
+{% else %}
+    {% set layout = "ElaoThemeBundle:Demo:layout.html.twig" %}
+    {% form_theme form "ElaoFormBundle:Form:form_elao_layout.html.twig" %}
+{% endif %}
+
+{% extends layout %}
+
+{% block content %}
+    <div class="content">
+        <h1>Form</h1>
+        {{ form(form) }}
+    </div>
+{% endblock %}
